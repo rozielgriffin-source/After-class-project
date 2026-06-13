@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Weather App Homepage</title>
+ 
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+ 
+    body {
+      background-color: teal;
+      background-image: radial-gradient(circle, white 2px, transparent 3px);
+      background-size: 40px 40px;
+      background-repeat: repeat;
+      background-position: top center;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+    }
+ 
+    h1 {
+      font-size: 32px;
+      color: white;
+    }
+ 
+    .subtitle {
+      font-size: 18px;
+      color: white;
+    }
+ 
+    .weather-card {
+      width: 400px;
+      border: 3px solid red;
+      border-radius: 15px;
+      background-image: linear-gradient(to bottom right, blue, lightblue);
+    }
+ 
+    .weather-icon {
+      font-size: 70px;
+      animation: floatCloud 3s infinite alternate;
+    }
+ 
+    #temperature {
+      font-size: 48px;
+      font-weight: bold;
+      color: #fffacd;
+    }
+ 
+    .details {
+      font-size: 16px;
+      color: white;
+    }
+ 
+    .forecast-section {
+      width: 600px;
+      border: 3px solid red;
+      border-radius: 12px;
+      background-image: radial-gradient(circle, blue, lightblue);
+      color: #003366;
+    }
+ 
+    .forecast-title {
+      color: #003366;
+    }
+ 
+    .day {
+      border: 2px solid black;
+      font-size: 17px;
+      color: black;
+    }
+ 
+    h2, h3 {
+      color: white;
+    }
+ 
+    @keyframes floatCloud {
+      from {
+        transform: translateY(0);
+      }
+ 
+      to {
+        transform: translateY(20px);
+      }
+    }
+  </style>
+</head>
+ 
+<body>
+ 
+  <h1>My Weather App Homepage</h1>
+ 
+  <p class="subtitle">
+    Determine your day's plans based off todays weather
+  </p>
+ 
+  <div class="weather-card">
+    <h2> Weather for the day</h2>
+ 
+    <div class="weather-icon">Sunny</div>
+ 
+    <p id="temperature">88°f</p>
+ 
+    <p class="details">City: Ellabel</p>
+    <p class="details">Condition: Sunny</p>
+    <p class="details">Humidity: 11%</p>
+    <p class="details">Wind Speed: up to 6 mph</p>
+  </div>
+ 
+  <h2>Weekly Forecast</h2>
+ 
+  <div class="forecast-section">
+    <h3 class="forecast-title">Weather for the next 5 Days</h3>
+ 
+    <p class="day">Monday: thunderstorm - 58°f</p>
+    <p class="day">Tuesday: thunderstorm - 64°f</p>
+    <p class="day">Wednesday: Rainy - 41°f</p>
+    <p class="day">Thursday: slightly windy - 80°f</p>
+    <p class="day">Friday: Sunny - 87°f</p>
+  </div>
+</body>
+</html>
