@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roz's Restaurant Menu Card</title>
+ 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+ 
+    body {
+      font-family: arial, serif;
+      background-color: black;
+      color: gold;
+    }
+ 
+    .menu {
+      width: 600px;
+      border: 4px solid gold;
+      border-radius: 15px;
+      background-color: lightgrey;
+      box-shadow: 0 0 20px lightblue;
+    }
+ 
+    .restaurant-name {
+      font-size: 48px;
+      font-weight: bold;
+      color: gold;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 4px lightyellow;
+    }
+ 
+    .tagline {
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+      color: purple;
+      text-decoration: underline;
+    }
+ 
+    .menu-section {
+      border: 2px solid ;
+      box-shadow: 0 0 8px ;
+    }
+ 
+    .section-title {
+      font-size: 26px;
+      color: coral;
+      text-transform: capitalize;
+      text-decoration: overline;
+    }
+ 
+    .dish-name {
+      font-size: 20px;
+      font-weight: bold;
+      color: purple;
+      text-transform: capitalize;
+    }
+ 
+    .dish-name:hover {
+      transform: scale(1.2);
+    }
+ 
+    .dish-description {
+      font-size: 15px;
+      line-height: 1.6;
+      text-indent: 30px;
+      color: gray;
+    }
+ 
+    .special{
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+      background-color: red;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 3px darkblue;
+      box-shadow: 0 0 12px red;
+      transform: rotate(5deg);
+    }
+  </style>
+</head>
+ 
+<body>
+ 
+  <div class="menu">
+ 
+    <h1 class="restaurant-name">Roz's Royal Recipes</h1>
+ 
+    <p class="tagline">Fresh food, happy mood!</p>
+ 
+    <div class="menu-section">
+      <h2 class="section-title">Apetizers</h2>
+ 
+      <p class="dish-name">Mozzarella Sticks</p>
+      <p class="dish-description">
+        delicious melted cheese inside of a fried crust.
+      </p>
+ 
+      <p class="dish-name">Notorious Nachos</p>
+      <p class="dish-description"> Tortia chips served with many toppings of your choice.</p>
+    </div>
+ 
+    <div class="menu-section">
+      <h2 class="section-title">main course</h2>
+ 
+      <p class="dish-name">Caeser Salad</p>
+      <p class="dish-description"> A healthy, yummy salad option served with any dressing you want.</p>
+ 
+      <p class="dish-name"> Steak and Baked Potato</p>
+      <p class="dish-description">
+        A delicious steak served with a loaded baked potato with toppings of your choice.
+      </p>
+    </div>
+ 
+    <p class="special">Our New Weekend special Is 30% off!</p>
+  </div>
+</body>
+</html>
