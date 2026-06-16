@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Ice Cream Shop Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: aqua;
+      text-align: center;
+      color: white;
+    }
+    h1 {
+      color: black;
+      font-size: 32px;
+    }
+    h1 + p {
+      color: purple;
+      font-weight: bold;
+      background-color: white;
+      border-radius: 6px;
+    }
+    .shop-description::first-letter {
+      font-size: 36px;
+      color: coral;
+      font-weight: bold;
+    }
+    .menu-box {
+      width: 420px;
+      background-color: blue;
+      border: 3px solid black;
+      border-radius: 15px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    ul {
+      padding: 0;
+    }
+    ul > li {
+      list-style: none;
+      background-color: yellow;
+      color: #5c2a4a;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px;
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px solid black;
+    }
+    ul > li:nth-child(3) {
+      background-color: lightblue;
+      color: blue;
+      border: 3px solid coral;
+    }
+    ul > li:hover {
+      background-color: coral;
+      color: white;
+      cursor: pointer;
+      transform: scale(1.05);
+    }
+    button {
+      background-color: black;
+      color: pink;
+      border: none;
+      border-radius: 15px;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: white;
+      color: brown;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Ice Cream Shop Menu</h1>
+  <p> Low and Behold: The Ice-olicious Ice Cream Shop</p>
+  <p class="shop-description">
+    Here, we serve some of the worlds most exclusive flavours of ice crea.
+  </p>
+  <div class="menu-box">
+    <h2>Today's Ice Cream Flavours</h2>
+    <ul>
+      <li>Perfect Pineapple</li>
+      <li>Boyant Birthday Cake </li>
+      <li>Cool Cookies N Cream - Flavor of the day</li>
+      <li> Monster Mint</li>
+      <li>Hasty Hazel Nut</li>
+    </ul>
+    <button>Order Here </button>
+  </div>
+</body>
+</html>
