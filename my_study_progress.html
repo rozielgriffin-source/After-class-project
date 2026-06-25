@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Study Progress Dashboard</title>
+  <link rel="stylesheet" href=
+  "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+        background-color: lightcoral; 
+        font-family: Arial, sans-serif;
+        color:white
+    }
+    .jumbotron {
+        background-color: yellow;
+        border-left: 8px solid black;
+    }
+    .jumbotron h1 {
+        color: darkgreen;
+    }
+    .section-title { 
+        color: purple;
+        margin-top: 25px; 
+        margin-bottom: 15px;
+    }
+    p { 
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>My Study Progress Webpage</h1>
+      <p class="lead">Use this webpage to track your study progress and evaluate how much you've learned
+         and how much more there is to learn.</p>
+
+      <button class="btn btn-success">Math</button>
+      <button class="btn btn-secondary">History</button>
+      <button class="btn btn-info">P.E</button>
+      <button class="btn btn-warning">Coding</button>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <h2 class="section-title">Total units needed to complete class<span class="badge badge-danger">31</span></h2>
+
+    <p>Math <span class="badge badge-success">9 lessons</span></p>
+    <p>History <span class="badge badge-secondary">6 lessons</span></p>
+    <p><abbr title="Physical Education">P.E</abbr> <span class="badge badge-warning">9 lessons</span></p>
+    <p>Coding <span class="badge badge-danger">7 lessons</span></p>
+
+    <h2 class="section-title">Subject Progress</h2>
+
+    <p>Math</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-primary" style="width: 95%">95%</div>
+    </div>
+
+    <p>History</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-secondary" style="width: 75%">75%</div>
+    </div>
+
+    <p><abbr title="Physical Education">P.E</abbr></p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-warning" style="width: 45%">45%</div>
+    </div>
+
+    <p>Coding</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-danger" style="width: 25%">25%</div>
+    </div>
+
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
