@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+
+<body>
+
+<h1>Simple Calculator</h1>
+<p>You can use javascript to do all the calculating you would ever need</p>
+<p id="add"></p>
+<p id="mul"></p>
+<p id="sub"></p>
+<p id="div"></p>
+<script>
+    var num1 = 24;
+    var num2 = 8;
+
+    var add = num1 + num2;
+    var sub = num1 - num2;
+    var mul = num1 * num2;
+    var div = num1 / num2;
+document.getElementById("add").innerHTML = "Addition: " + add;
+document.getElementById("mul").innerHTML = "Multiplication: " + mul;
+document.getElementById("sub").innerHTML = "Subtraction: " + sub;
+document.getElementById("div").innerHTML = "Division: " + div;
+</script>
